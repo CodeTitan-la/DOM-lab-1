@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Vending Machine</h1>
-    <h2>Total: <p id="total">$0.00</p></h2>
-    <button class="LC">
-      Lime Cola
-      <p>$2.00</p>
-    </button>
-    <button class="SP">
-      Salted Peanuts
-      <p>$3.00</p>
-    </button>
-    <button class="CB">
-      Chocolate Bar
-      <p>$4.00</p>
-    </button>
-    <button class="FG">
-      Fruit Gummies
-      <p>$6.00</p>
-    </button>
-    <form class="form" action="input" id="theForm">
-      <label for="number-input">How Many?</label>
-      <input type="text" name="" id="number-input" />
-      <label for="coin-select">Which sheckle?</label>
-      <select id="coin-select">
-        <option  value="Penny">Penny</option>
-        <option value="Nickle">Nickle</option>
-        <option value="Dime">Dime</option>
-        <option value="Quarter">The big sheckle</option>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Vending Machine</h1>
+  <h2>Total: <p id="total">$0.00</p>
+  </h2>
+  <button class="LC">
+    Lime Cola
+    <p>$2.00</p>
+  </button>
+  <button class="SP">
+    Salted Peanuts
+    <p>$3.00</p>
+  </button>
+  <button class="CB">
+    Chocolate Bar
+    <p>$4.00</p>
+  </button>
+  <button class="FG">
+    Fruit Gummies
+    <p>$6.00</p>
+  </button>
+  <form class="form" action="input" id="theForm">
+    <label for="number-input">How Many?</label>
+    <input type="text" name="" id="number-input" />
+    <label for="coin-select">Which sheckle?</label>
+    <select id="coin-select">
+      <option value="Penny">Penny</option>
+      <option value="Nickle">Nickle</option>
+      <option value="Dime">Dime</option>
+      <option value="Quarter">Quarter</option>
       <input type="submit" value="Show me the sheckles" id="submission">
-    </form>
-    
-    
-    <div id="light-bulb">Light Bulb</div>
-    <button id="on">ON</button>
-    <button id="off">OFF</button>
-    <button id="toggle">TOGGLE</button>
-    <button id="end">END</button>
-    <script src="script.js"></script>
-  </body>
+  </form>
+
+
+  <div id="light-bulb">Light Bulb</div>
+  <button id="on">ON</button>
+  <button id="off">OFF</button>
+  <button id="toggle">TOGGLE</button>
+  <button id="end">END</button>
+  <script src="script.js"></script>
+</body>
+
 </html>

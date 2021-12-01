@@ -36,3 +36,17 @@ form {
   background-color: silver;
   border-radius: 50%;
 }
+
+.Dime {
+  height: 35px;
+  width: 35px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.Quarter {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 50%;
+}

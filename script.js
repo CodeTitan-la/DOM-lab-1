@@ -1,24 +1,30 @@
 // part 1
-let grandTotal = document.getElementById("total");
 
+
+let grandTotal = document.getElementById("total");
+superGrandTotal = 0;
 const limeCola = document.getElementsByClassName("LC")[0];
 limeCola.addEventListener("click", e => {
-    grandTotal.innerText =  "$2.00"
+    superGrandTotal +=  parseFloat("2.00");
+    grandTotal.innerText = superGrandTotal.toFixed(2);
 });
 
 const saltedPeanuts = document.getElementsByClassName("SP")[0];
 saltedPeanuts.addEventListener("click", e => {
-    grandTotal.innerText = "$3.00";
+    superGrandTotal += parseFloat("3.00");
+    grandTotal.innerText = superGrandTotal.toFixed(2);
 });
 
 const chocolateBar = document.getElementsByClassName("CB")[0];
 chocolateBar.addEventListener("click", e => {
-    grandTotal.innerText = "$4.00";
+    superGrandTotal += parseFloat("4.00");
+    grandTotal.innerText = superGrandTotal.toFixed(2);
 });
 
 const fruitGummies = document.getElementsByClassName("FG")[0];
 fruitGummies.addEventListener("click", e => {
-    grandTotal.innerText = "$6.00";
+    superGrandTotal += parseFloat("6.00");
+    grandTotal.innerText = superGrandTotal.toFixed(2);
 });
 
 
