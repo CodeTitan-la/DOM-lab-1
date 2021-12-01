@@ -1,6 +1,5 @@
-
+// part 1
 let grandTotal = document.querySelector("h2");
-
 
 const limeCola = document.getElementsByClassName("LC")[0];
 limeCola.addEventListener("click", e => {
@@ -22,3 +21,35 @@ fruitGummies.addEventListener("click", e => {
     grandTotal.innerText = "Total: $6.00";
 });
 
+//part 3
+
+const lightBulb = document.getElementById("light-bulb")
+
+let lightOn = document.getElementById("on");
+lightOn.addEventListener("click", e => {
+    lightBulb.style.backgroundColor = ("yellow");
+})
+
+let lightOff = document.getElementById("off");
+lightOff.addEventListener("click", e => {
+    lightBulb.style.backgroundColor = ("gray");
+})
+
+let lightToggle = document.getElementById("toggle");
+lightToggle.addEventListener("click", e => {
+    if(lightBulb.style.backgroundColor === "yellow"){
+        lightBulb.style.backgroundColor = ("gray");
+    }
+    else if (lightBulb.style.backgroundColor === "gray"){
+        lightBulb.style.backgroundColor = ("yellow");
+    }
+})
+
+let endExample = document.getElementById("end");
+endExample.addEventListener("click", e => {
+    lightBulb.remove();
+    lightOn.disabled = true;
+    lightOff.disabled = true;
+    lightToggle.disabled = true;
+    endExample.disabled = true;
+})
