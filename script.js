@@ -1,25 +1,56 @@
 // part 1
-let grandTotal = document.querySelector("h2");
+let grandTotal = document.getElementById("total");
 
 const limeCola = document.getElementsByClassName("LC")[0];
 limeCola.addEventListener("click", e => {
-    grandTotal.innerText = "Total: 2.00";
+    grandTotal.innerText =  "$2.00"
 });
 
 const saltedPeanuts = document.getElementsByClassName("SP")[0];
 saltedPeanuts.addEventListener("click", e => {
-    grandTotal.innerText = "Total: $3.00";
+    grandTotal.innerText = "$3.00";
 });
 
 const chocolateBar = document.getElementsByClassName("CB")[0];
 chocolateBar.addEventListener("click", e => {
-    grandTotal.innerText = "Total: $4.00";
+    grandTotal.innerText = "$4.00";
 });
 
 const fruitGummies = document.getElementsByClassName("FG")[0];
 fruitGummies.addEventListener("click", e => {
-    grandTotal.innerText = "Total: $6.00";
+    grandTotal.innerText = "$6.00";
 });
+
+
+let coins  = document.getElementById("number-input");
+
+let typeOfCoin = document.getElementById("coin-select");
+
+let submission = document.getElementById("theForm");
+
+let coinContainer = document.getElementById("coin-container");
+
+submission.addEventListener("submit", e => {
+    e.preventDefault();
+   let numCoins = coins.value;
+   let coinType = typeOfCoin.value;
+   for(let i = 0; i <= numCoins; i++ ){
+       const newCoin = document.createElement("div");
+       newCoin.classList.add("coin", coinType);
+       
+
+       newCoin.addEventListener("click", e => {
+           newCoin.remove();
+       });
+       submission.append(newCoin);
+    };
+    
+});
+
+
+
+//Use the createEelemnt in JavaScript. Then in JavaScript when the "show me the sheckles" button is clicked, change the display to display: inline-block.
+
 
 //part 3
 

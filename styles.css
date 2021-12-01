@@ -1,3 +1,7 @@
+p {
+  display: inline-block;
+}
+
 #light-bulb {
   margin: 30px 0;
   height: 50px;
@@ -7,4 +11,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form {
+  margin: 60px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.Penny {
+  height: 30px;
+  width: 30px;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+.Nickle {
+  height: 45px;
+  width: 45px;
+  background-color: silver;
+  border-radius: 50%;
 }

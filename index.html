@@ -8,8 +8,8 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Welcome To The Best Vending Machine!</h1>
-    <h2>Total: $0.00</h2>
+    <h1>Vending Machine</h1>
+    <h2>Total: <p id="total">$0.00</p></h2>
     <button class="LC">
       Lime Cola
       <p>$2.00</p>
@@ -26,6 +26,19 @@
       Fruit Gummies
       <p>$6.00</p>
     </button>
+    <form class="form" action="input" id="theForm">
+      <label for="number-input">How Many?</label>
+      <input type="text" name="" id="number-input" />
+      <label for="coin-select">Which sheckle?</label>
+      <select id="coin-select">
+        <option  value="Penny">Penny</option>
+        <option value="Nickle">Nickle</option>
+        <option value="Dime">Dime</option>
+        <option value="Quarter">The big sheckle</option>
+      <input type="submit" value="Show me the sheckles" id="submission">
+    </form>
+    
+    
     <div id="light-bulb">Light Bulb</div>
     <button id="on">ON</button>
     <button id="off">OFF</button>
