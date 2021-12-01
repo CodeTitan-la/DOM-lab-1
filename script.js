@@ -40,7 +40,7 @@ submission.addEventListener("submit", e => {
     e.preventDefault();
    let numCoins = coins.value;
    let coinType = typeOfCoin.value;
-   for(let i = 0; i <= numCoins; i++ ){
+   for(let i = 0; i < numCoins; i++ ){
        const newCoin = document.createElement("div");
        newCoin.classList.add("coin", coinType);
        
